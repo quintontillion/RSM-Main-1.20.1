@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "package": "rsm.rsm.mixin.client",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "ExampleClientMixin",
+    "clientGetterAndSetter.getAndSet",
+    "packetManager.openGuiOverride",
+    "villagerScreen.injectHandledScreens"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "villagerScreen.ControlsVillagerScreen",
+    "villagerScreen.getMerchantMixin",
+    "villagerScreen.GetRealMerchantTrades",
+    "villagerWorldInteraction.injectOverheadStats"
+  ]
+
+}
